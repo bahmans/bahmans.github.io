@@ -26,20 +26,49 @@ background-color:#FCFAD4;
 			.buttonCV {
 			  background-color: white
 			  color: black;
-			  border: 2px solid #008CBA;font-size: 20px;
+			  border: 2px solid #008CBA;font-size: 20px; transition: all 0.5s; cursor: pointer;
 			}
 
 			.buttonCV:hover {
-			  background-color: #008CBA;font-size: 20px;
+			  background-color: #008CBA;font-size: 20px; transition: all 0.5s; cursor: pointer;
 			  color: white;
 			}
+
+
+
+			.buttonCV span {
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+
+			.buttonCV span:after {
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.5s;
+			}
+
+			.buttonCV:hover span {
+			  padding-right: 25px;
+			}
+
+			.buttonCV:hover span:after {
+			  opacity: 1;
+			  right: 0;
+			}
+
+
 		</style>
 
 		<p><button style="height:45px;width:130px" class="button button0" onclick="window.location.href='https://bahmans.github.io/index.html';">
 	      Bahman
 	    </button>
-				<button style="height:45px;width:130px" class="button buttonCV" onclick="window.location.href='https://bahmans.github.io/CV.html';">
-		      CV
+				<button style="height:45px;width:130px" class="button buttonCV" style="vertical-align:middle" onclick="window.location.href='https://bahmans.github.io/CV.html';"><span>
+		      CV </span>
 		    </button></p>
 
 		<style>
