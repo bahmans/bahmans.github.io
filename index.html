@@ -229,17 +229,43 @@ background-color:#FCFAD4;
 			.button3 {
 			  background-color: white
 			  color: black;
-			  border: 2px solid #008CBA;font-size: 22px;
+			  border: 2px solid #008CBA;font-size: 22px; transition: all 0.5s; cursor: pointer;
 			}
 
 			.button3:hover {
-			  background-color: #008CBA;font-size: 22px;
+			  background-color: #008CBA;font-size: 22px; transition: all 0.5s; cursor: pointer;
 			  color: white;
+			}
+
+
+			.button3 span {
+				cursor: pointer;
+				display: inline-block;
+				position: relative;
+				transition: 0.5s;
+			}
+
+			.button3 span:after {
+				content: '\00bb';
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				right: -20px;
+				transition: 0.5s;
+			}
+
+			.button3:hover span {
+				padding-right: 25px;
+			}
+
+			.button3:hover span:after {
+				opacity: 1;
+				right: 0;
 			}
 		</style>
 
-			<h2 id="titr2"><button style="height:50px;width:150px" class="button button3" onclick="window.location.href='https://bahmans.github.io/CV.html';">
-				See my CV!
+			<h2 id="titr2"><button style="height:50px;width:150px" class="button button3" style="vertical-align:middle" onclick="window.location.href='https://bahmans.github.io/CV.html';"><span>
+				See my CV! </span>
 			</button></h2>
 
 
