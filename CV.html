@@ -111,6 +111,84 @@ background-color:#FCFAD4;
 </style>
 
 <style>
+.dropbtn1 {
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+	display: block;
+	text-align: center;
+ 	outline: none;
+	overflow: hidden;
+	position: relative;
+	color: #eeeeee;
+	font-weight: 300;
+	background-color: #153f00;
+	padding: 11px 40px;
+	margin: 0 auto;
+}
+
+button span {
+        position: relative;
+        z-index: 1;
+      }
+      .dropbtn1:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 470%;
+        width: 140%;
+        background: #52b71f;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+        transform: translateX(-100%) translateY(-25%) rotate(45deg);
+      }
+      .dropbtn1:hover:after {
+        -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+        transform: translateX(-9%) translateY(-25%) rotate(45deg);
+      }
+
+
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown1-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #D5D0D0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown1-content a {
+	font-family: Arial;
+	color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown1-content a:hover {background-color: #30EDE3; font-size: 20px; transition: all 0.5s; cursor: pointer; font-family: Arial;
+color: white;}
+.dropdown1:hover .dropdown1-content {display: block;}
+.dropdown1:hover .dropbtn1 {background-color: #3e8e41;}
+</style>
+
+<div class="dropdown1" style="float:right;">
+  <button class="dropbtn1">Behind the scenes!</button>
+  <div class="dropdown1-content">
+    <a href="https://bahmans.github.io/Behind_the_scenes_Act_1_Research.html">Act 1: Research</a>
+
+  </div>
+</div>
+
+<style>
 #grad1 {
 	height: 200px;
 	background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
