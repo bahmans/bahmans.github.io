@@ -56,17 +56,43 @@ background-color:#FCFAD4;
 		left: 0;
 	}
 </style>
-<style>
-	.buttonCV {
-		background-color: white
-		color: black;
-		border: 2px solid #008CBA;font-size: 20px;
-	}
 
-	.buttonCV:hover {
-		background-color: #008CBA;font-size: 20px;
-		color: white;
-	}
+<style>
+.buttonCV {
+	background-color: white
+	color: black;
+	border: 2px solid #008CBA;font-size: 20px; transition: all 0.5s; cursor: pointer;
+}
+
+.buttonCV:hover {
+	background-color: #008CBA;font-size: 20px; transition: all 0.5s; cursor: pointer;
+	color: white;
+}
+
+.buttonCV span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.buttonCV span:before {
+	content: '\00AB';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: -20px;
+	transition: 0.5s;
+}
+
+.buttonCV:hover span {
+	padding-left: 25px;
+}
+
+.buttonCV:hover span:before {
+	opacity: 1;
+	left: 0;
+}
 </style>
 
 <style>
@@ -199,8 +225,8 @@ color: white;}
 <p><button style="height:45px;width:130px" class="button button0" style="vertical-align:middle" onclick="window.location.href='https://bahmans.github.io/index.html';"><span>
 		Bahman </span>
 	</button>
-		<button style="height:45px;width:130px" class="button buttonCV" onclick="window.location.href='https://bahmans.github.io/CV.html';">
-			CV
+		<button style="height:45px;width:130px" class="button buttonCV" style="vertical-align:middle" onclick="window.location.href='https://bahmans.github.io/CV.html';"><span>
+		CV </span>
 		</button>
 		<button id="grad1" style="height:45px;width:160px" class="button buttonillusion" style="vertical-align:middle" onclick="window.location.href='https://bahmans.github.io/Illusive_life.html';"><span>
 			Illusion! </span>
@@ -395,6 +421,9 @@ text-align:center; font-size: 24px
 
 <h2 id="titr2"><button style="height:45px;width:130px" class="button button0" style="vertical-align:middle" onclick="window.location.href='https://bahmans.github.io/index.html';"><span>
 		Bahman </span>
+	</button>
+	<button style="height:45px;width:130px" class="button buttonCV" style="vertical-align:middle" onclick="window.location.href='https://bahmans.github.io/CV.html';"><span>
+	CV </span>
 	</button>
 	<button id="grad1" style="height:45px;width:160px" class="button buttonillusion" style="vertical-align:middle" onclick="window.location.href='https://bahmans.github.io/Illusive_life.html';"><span>
 		Illusion! </span>
