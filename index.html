@@ -443,11 +443,53 @@ also change <body> to <body class="padding1">
 				opacity: 1;
 				right: 0;
 			}
+
+
+			.button4 {
+			  background-color: black
+			  color: white;
+			  border: 2px solid #09E649;font-size: 22px; transition: all 0.5s; cursor: pointer;
+			}
+
+			.button4:hover {
+			  background-color: #09E649;font-size: 22px; transition: all 0.5s; cursor: pointer;
+			  color: white;
+			}
+
+
+			.button4 span {
+				cursor: pointer;
+				display: inline-block;
+				position: relative;
+				transition: 0.5s;
+			}
+
+			.button4 span:after {
+				content: '\00bb';
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				right: -20px;
+				transition: 0.5s;
+			}
+
+			.button4:hover span {
+				padding-right: 25px;
+			}
+
+			.button4:hover span:after {
+				opacity: 1;
+				right: 0;
+			}
 		</style>
 
 			<h2 id="titr2"><button style="height:50px;width:160px" class="button button3" style="vertical-align:middle" onclick="window.location.href='https://bahmans.github.io/CV.html';"><span>
 				See my CV! </span>
-			</button></h2>
+			</button>
+			<button style="height:50px;width:160px" class="button button4" style="vertical-align:middle" onclick="window.location.href='https://linktr.ee/bahmans';"><span>
+				Links! </span>
+			</button>
+			</h2>
 
 
 
